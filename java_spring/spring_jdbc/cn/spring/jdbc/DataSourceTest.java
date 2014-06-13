@@ -8,7 +8,7 @@ import cn.spring.SpringHelper;
 
 public class DataSourceTest extends SpringHelper{
 	static{
-		path = "cn/spring/jdbc/applicationContext.xml";
+		path = "cn/spring/jdbc/applicationContext.xml";  
 	}
 	
 	@Test
