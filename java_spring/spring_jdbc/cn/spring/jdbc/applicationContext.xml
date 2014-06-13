@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+   <!-- 
+   	  	配置dbcp的数据库连接池
+    -->
+   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+   		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+   		<property name="url" value="jdbc:mysql://127.0.0.1:3306/db909"></property>
+   		<property name="username" value="root"></property>
+   		<property name="password" value="root"></property>
+   </bean>
+</beans>

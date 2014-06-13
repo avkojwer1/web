@@ -1,0 +1,18 @@
+package cn.test;
+
+import org.hibernate.SessionFactory;
+import org.junit.Test;
+
+public class StatusTest {
+	
+	@Test
+	public void status(){
+		
+		public static SessionFactory sessionFactory;
+		
+		
+	}
+	
+	
+	
+}

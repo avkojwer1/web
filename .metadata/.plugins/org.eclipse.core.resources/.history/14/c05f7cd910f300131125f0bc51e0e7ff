@@ -1,0 +1,9 @@
+package cn.spring.jdbc;
+
+import cn.spring.SpringHelper;
+
+public class DataSourceTest extends SpringHelper{
+	static{
+		path = "cn/itcast/spring0909/jdbc/applicationContext.xml";
+	}
+}
