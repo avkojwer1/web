@@ -1,0 +1,47 @@
+package cn.test;
+
+import org.junit.Test;
+
+public class TestObersver {
+	
+	@Test
+	public void test(){
+		Person person = new Person();
+		
+		person.addPersonListener(new PersonListener() {
+			
+			public void running() {
+				
+			}
+		});
+		
+		
+	}
+	
+}
+
+class Person{
+	private PersonListener pl;
+	
+	public void addPersonListener(PersonListener pl) {
+		this.pl = pl;
+	}
+	
+	public void run(){
+		if(pl != null)
+			pl.running();
+	}
+	
+	
+}
+
+interface PersonListener{
+	void running();
+}
+
+private PersonEvent(){
+	
+}
+
+
+

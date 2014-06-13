@@ -1,0 +1,31 @@
+package cn.test;
+
+import javax.transaction.Transaction;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+import org.junit.Test;
+
+import cn.domain.Person;
+
+public class PersonTest {
+	
+	@Test
+	public void testSave(){
+		Configuration configuration = new Configuration();
+		configuration.configure();
+
+		SessionFactory sessionFactory = configuration.buildSessionFactory();
+		
+		Transaction transaction = sessionFactory.openSession();
+		Session session = sessionFactory.openSession();
+		Person person = new Person();
+		person.setPname("jingjing");
+		person.setPsex("M");
+		session.save(person);
+		
+		session.close();
+	}
+	
+}

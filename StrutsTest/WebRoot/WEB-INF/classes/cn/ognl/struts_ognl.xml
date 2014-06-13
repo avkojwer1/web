@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="ognl" namespace="/ognl" extends="struts-default">
+  		
+  		
+		<action name="ValueStackAction" class="cn.ognl.ValueStackAction">
+		   		
+			<result name="success">
+				<param name="location">/ognl/OgnlTagAction.jsp</param>
+			</result>
+		    
+		    <result name="error">
+				<param name="location">/ognl/error.jsp</param>
+			</result>
+		</action>
+		
+	</package>
+</struts>

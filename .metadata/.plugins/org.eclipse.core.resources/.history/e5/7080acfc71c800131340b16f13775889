@@ -1,0 +1,16 @@
+package cn.test;
+
+import org.junit.Test;
+
+public class StatusTest {
+	
+	@Test
+	public void status(){
+		
+		
+		
+	}
+	
+	
+	
+}

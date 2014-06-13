@@ -1,0 +1,23 @@
+package cn.di.annotation;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+
+import javax.annotation.Resource;
+
+public class Person {
+	
+	@Resource(name="student")
+	//@Autowired//按照类型进行匹配
+	//@Qualifier("student")
+	private Student studen;
+	
+	@Resource
+	private Long pid;
+	
+	public void say(){
+		this.studen.say();
+	}
+}

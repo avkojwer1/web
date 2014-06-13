@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="pattern" namespace="/pattern" extends="struts-default">
+
+		<action name="BookAction" class="cn.pattern.BookAction" method="add">
+		   		
+			<result name="success" type="redirect">
+				<param name="location">/pattern/success.jsp</param>
+			</result>
+			
+		</action>
+		
+		<action name="*_add" class="cn.pattern.BookAction" method="add">
+			<result name="success" type="redirect">
+				<param name="location">/pattern/success.jsp</param>
+			</result>
+		</action>
+		
+		
+	</package>
+</struts>
