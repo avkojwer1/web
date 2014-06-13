@@ -1,9 +1,0 @@
-package cn.test;
-
-public class StatusTest {
-	
-	@Test
-	public void status(){
-		
-	}
-}
