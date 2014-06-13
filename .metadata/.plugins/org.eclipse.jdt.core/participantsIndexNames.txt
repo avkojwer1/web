@@ -1,7 +1,7 @@
 INDEX VERSION 1.126
-E:\java_project\web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1940293501.index
-\StrutsTest\src
 E:\java_project\web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\104653963.index
+\StrutsTest\src
+E:\java_project\web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1940293501.index
 \StrutsTest\src
 E:\java_project\web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3912259297.index
 \StrutsTest\src
@@ -13,9 +13,9 @@ E:\java_project\web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\207088
 \StrutsTest\src
 E:\java_project\web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1605133826.index
 \StrutsTest\src
-E:\java_project\web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4060233091.index
-\StrutsTest\src
 E:\java_project\web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\843579021.index
+\StrutsTest\src
+E:\java_project\web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4060233091.index
 \StrutsTest\src
 E:\java_project\web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2315153947.index
 \Web01\src

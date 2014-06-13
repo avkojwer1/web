@@ -35,7 +35,8 @@
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="cn.spring.HelloWorld"/>
 <fullyQualifiedTypeName name="cn.di.xml.set.Person"/>
+<fullyQualifiedTypeName name="java.lang.Throwable"/>
 <fullyQualifiedTypeName name="cn.spring.SpringHelper"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="java.lang.Throwable"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
 </qualifiedTypeNameHistroy>
