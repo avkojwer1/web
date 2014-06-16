@@ -18,4 +18,11 @@ public class DataSourceTest extends SpringHelper{
 		System.out.println(dataSource);
 	}
 	
+	
+	@Test
+	public void testSavePerson(){
+		PersonDao personDao = (PersonDao) context.getBean("personDao");
+		personDao.savePerson();
+	}
+	
 }
