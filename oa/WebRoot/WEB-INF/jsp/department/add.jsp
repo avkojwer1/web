@@ -1,9 +1,13 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/common/common.jsp"%>
 <html>
+<script language="javascript" src="${pageContext.request.contextPath}/ckeditor/ckeditor.js"></script>
+<script language="javascript" src="${pageContext.request.contextPath}/ckeditor/adapters/jquery.js"></script>
+<script language="javascript" src="${pageContext.request.contextPath}/js/department_add.js"></script>
 <head>
 	<title>部门设置</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
 </head>
 <body>
 
@@ -33,7 +37,7 @@
                         <td><s:textfield name="name" cssClass="InputStyle"></s:textfield></td>
                     </tr>
                     <tr><td>职能说明</td>
-                        <td><s:textarea name="description" cssClass="TextareaStyle"></s:textarea></td>
+                        <td><s:textarea name="description" cssClass="TextareaStyle" id="description""></s:textarea></td>
                     </tr>
                 </table>
             </div>
@@ -45,6 +49,7 @@
             <a href="javascript:history.go(-1);"><img src="${pageContext.request.contextPath}/css/images/goBack.png"/></a>
         </div>
     </s:form>
+
 </div>
 </body>
 </html>

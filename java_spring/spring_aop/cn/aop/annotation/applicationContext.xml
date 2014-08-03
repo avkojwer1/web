@@ -9,7 +9,7 @@
            http://www.springframework.org/schema/context
            	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
            	
-	<context:component-scan base-package="cn..aop.annotation"></context:component-scan>
+	<context:component-scan base-package="cn.aop.annotation"></context:component-scan>
 	<!-- 
 		启动AOP的注解解析器
 	 -->

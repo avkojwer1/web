@@ -11,8 +11,8 @@
            	http://www.springframework.org/schema/tx 
            	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
  	<bean id="departmentDao" class="cn.dao.impl.DepartmentDaoImpl">
- 		<property name="sessionFactory">
- 			<ref bean="sessionFactory"/>
+ 		<property name="hibernateTemplate">
+ 			<ref bean="hibernateTemplate"/>
  		</property>
  	</bean>
  	

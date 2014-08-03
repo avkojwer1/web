@@ -15,7 +15,7 @@
 		<property name="sex" type="java.lang.String" length="20"></property>
 		
 		<many-to-one name="department" class="cn.domain.Department" column="did"></many-to-one>
-		<set name="post" table="user_post">
+		<set name="posts" table="user_post">
 			<key>
 				<column name="uid"></column>
 			</key>

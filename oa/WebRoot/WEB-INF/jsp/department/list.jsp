@@ -40,8 +40,8 @@
         	<s:iterator value="#departmentList">
         		<tr class="TableDetail template">
         			<td><s:property value="name"/></td>
-        			<td><s:property value="description"/></td>
-        			<td><s:a action="departmentAction_deleteDepartment?did=%{did}">删除</s:a></td>
+        			<td><s:property value="description" escape="false" /></td>
+        			<td><s:a action="departmentAction_deleteDepartment?did=%{did}">删除</s:a> <s:a action="departmentAction_updateUI?did=%{did}">修改</s:a></td>
         		</tr>
         	</s:iterator>
         	
@@ -88,7 +88,7 @@
     <!-- 其他功能超链接 -->
     <div id="TableTail">
         <div id="TableTail_inside">
-            <a href="saveUI.html"><img src="${pageContext.request.contextPath}/css/images/createNew.png" /></a>
+            <a href="departmentAction_addUI.action"><img src="${pageContext.request.contextPath}/css/images/createNew.png" /></a>
         </div>
     </div>
 </div>

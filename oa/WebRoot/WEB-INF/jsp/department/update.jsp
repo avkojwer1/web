@@ -46,6 +46,8 @@
             <a href="javascript:history.go(-1);"><img src="${pageContext.request.contextPath}/css/images/goBack.png"/></a>
         </div>
     </s:form>
+    
+    <s:debug></s:debug>
 </div>
 </body>
 </html>

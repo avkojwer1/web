@@ -1,9 +1,10 @@
-package cn.test;
+package cn.test.service;
 
 import org.junit.Test;
 
 import cn.domain.Person;
 import cn.service.PersonService;
+import cn.test.BaseSpring;
 
 public class PersonServiceTest extends BaseSpring {
 	

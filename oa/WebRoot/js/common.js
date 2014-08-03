@@ -1,5 +1,3 @@
-
-
 $().ready(function(){
 //	$("a").each(function(){ 
 //		if($(this).text() == "删除"){

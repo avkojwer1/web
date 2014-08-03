@@ -4,21 +4,16 @@ import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.util.Collection;
 
+import javax.annotation.Resource;
+
 import org.springframework.orm.hibernate3.HibernateTemplate;
 
 import cn.dao.base.BaseDao;
 
 public class BaseDaoImpl<T> implements BaseDao<T>{
 	
+	@Resource(name="hibernateTemplate")
 	private HibernateTemplate hibernateTemplate;
-	
-	public HibernateTemplate getHibernateTemplate() {
-		return hibernateTemplate;
-	}
-
-	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
-		this.hibernateTemplate = hibernateTemplate;
-	}
 	
 	private Class classt;
 	

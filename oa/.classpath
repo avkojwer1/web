@@ -21,7 +21,7 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring2.5.5/commons-lang.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring2.5.5/commons-logging.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring2.5.5/log4j-1.2.15.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring2.5.5/spring.jar" sourcepath="F:/java-source/spring-framework-2.5.5/src"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring2.5.5/spring.jar" sourcepath="F:/java-source/spring-framework-2.5.5"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit/junit.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/hibernate3.5.6/antlr-2.7.6.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/hibernate3.5.6/commons-collections-3.1.jar"/>

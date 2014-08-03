@@ -56,12 +56,12 @@ public class User implements Serializable{
 		this.department = department;
 	}
 	
-	public Set<Post> getPost() {
-		return post;
+	public Set<Post> getPosts() {
+		return posts;
 	}
-	public void setPost(Set<Post> post) {
-		this.post = post;
+	public void setPosts(Set<Post> posts) {
+		this.posts = posts;
 	}
 
-	private Set<Post> post;
+	private Set<Post> posts;
 }
