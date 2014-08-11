@@ -6,6 +6,7 @@ import java.util.Collection;
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import cn.dao.impl.UserDaoImpl;
 import cn.domain.User;
@@ -17,23 +18,25 @@ public class UserServiceImpl implements UserService{
 	@Resource(name = "userDao")
 	private UserDaoImpl userDao;
 	
+	@Transactional(readOnly=false)
 	public void deleteUserById(Serializable id) {
 		userDao.deleteEntry(id);
 	}
 
 	public Collection<User> getAllUsers() {
 		
-		return userDao.getAllEntry();
+		return userDao.getUsers();
 	}
 
 	public User getUserById(Serializable id) {
 		return userDao.getEntryById(id);
 	}
-
+	
+	@Transactional(readOnly=false)
 	public void saveUser(User user) {
 		userDao.saveEntry(user);
 	}
-
+	@Transactional(readOnly=false)
 	public void updateUser(User user) {
 		userDao.updateEntry(user);
 	}

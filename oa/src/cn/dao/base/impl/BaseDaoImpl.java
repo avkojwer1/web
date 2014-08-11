@@ -13,7 +13,7 @@ import cn.dao.base.BaseDao;
 public class BaseDaoImpl<T> implements BaseDao<T>{
 	
 	@Resource(name="hibernateTemplate")
-	private HibernateTemplate hibernateTemplate;
+	public HibernateTemplate hibernateTemplate;
 	
 	private Class classt;
 	

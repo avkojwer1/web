@@ -1,5 +1,8 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/common/common.jsp"%>
+<script language="javascript" src="${pageContext.request.contextPath}/js/jquery-checkbox.js"></script>
+<script language="javascript" src="${pageContext.request.contextPath}/js/user_list.js"></script>
+
 <html>
 <head>
     <title>用户列表</title>
@@ -23,6 +26,7 @@
         <!-- 表头-->
         <thead>
             <tr align=center valign=middle id=TableTitle>
+            	<td><input type="checkbox" name="allcheck"/>全选</td>
                 <td width="100">用户名</td>
                 <td width="100">所属部门</td>
                 <td>岗位</td>
@@ -34,6 +38,7 @@
         <tbody id="TableData" class="dataContainer" datakey="userList">
         	<s:iterator>
 			<tr class="TableDetail1 template">
+				<td><input type="checkbox" name="userCheckBox"/></td>
 			    <td><s:property value="username"/></td>
 				<td><s:property value="department.name"/></td>
 				<td>
@@ -52,7 +57,7 @@
     
      <div id="TableTail">
         <div id="TableTail_inside">
-            <a href="saveUI.html"><img src="${pageContext.request.contextPath}/css/images/createNew.png" /></a>
+            <a href="${pageContext.request.contextPath}/userAction_addUI.action"><img src="${pageContext.request.contextPath}/css/images/createNew.png" /></a>
         </div>
     </div>
     

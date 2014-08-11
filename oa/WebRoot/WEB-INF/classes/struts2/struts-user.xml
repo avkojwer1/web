@@ -11,4 +11,11 @@
   		<result name="updateUI">WEB-INF/jsp/user/update.jsp</result>
   	</action>
   </package>
+  
+  <package name="userjson" namespace="/" extends="ajax">
+  	<action name="userJSONAction_*" method="{1}" class="userAction">
+  		<result type="ajaxResult"></result>
+  	</action>
+  </package>
+  
 </struts>	

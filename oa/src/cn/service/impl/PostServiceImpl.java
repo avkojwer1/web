@@ -2,6 +2,7 @@ package cn.service.impl;
 
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.Set;
 
 import javax.annotation.Resource;
 
@@ -41,6 +42,11 @@ public class PostServiceImpl implements PostService{
 	@Transactional(readOnly=false)
 	public void updatePost(Post post) {
 		this.postDao.updateEntry(post);
+	}
+
+	public Set<Post> getPostsByIds(Long[] pids) {
+		
+		return this.postDao.getPostsByIds(pids);
 	}
 
 }
