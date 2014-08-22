@@ -88,7 +88,13 @@ public class UserAction extends BaseAction<User> {
 	public String checkUsername(){
 		
 		ActionContext.getContext().getValueStack().push("hello");
-		
+		User user = userService.getUserByName(this.model.getUsername());
+		if(user == null){
+			ActionContext.getContext().getValueStack().push("false");
+		}
+		else{
+			ActionContext.getContext().getValueStack().push("true");
+		}
 		return SUCCESS;
 	}
 }

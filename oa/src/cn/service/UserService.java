@@ -12,4 +12,6 @@ public interface UserService {
 	public Collection<User> getAllUsers();
 	public User getUserById(Serializable id);
 	public void deleteUserById(Serializable id);
+	public User getUserByName(String name);
+	
 }

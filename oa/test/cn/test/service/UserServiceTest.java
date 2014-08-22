@@ -13,4 +13,10 @@ public class UserServiceTest extends BaseSpring{
 		service.getAllUsers();
 	}
 	
+	@Test
+	public void getUserByName(){
+		UserService service = (UserService) context.getBean("userService");
+		System.out.println(service.getUserByName("aa"));
+	}
+	
 }

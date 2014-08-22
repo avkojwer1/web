@@ -41,4 +41,8 @@ public class UserServiceImpl implements UserService{
 		userDao.updateEntry(user);
 	}
 
+	public User getUserByName(String name) {
+		return this.userDao.getUserByName(name);
+	}
+
 }
